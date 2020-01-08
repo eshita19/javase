@@ -25,9 +25,9 @@
        - We can create generic method and constructors.
           ```public static <T> int getVal(T val)```
    - ### Generic Interfaces:
-     - interface MinMax<T extends Comparable<T>>
-     - class MyClass<T extends Comparable<T>> implements MinMax<T>
-     - Class MyClass implements MinMax<Integer>
+     - ```interface MinMax<T extends Comparable<T>>```
+     - ```class MyClass<T extends Comparable<T>> implements MinMax<T>```
+     -``` Class MyClass implements MinMax<Integer>```
    
    
    
