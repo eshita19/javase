@@ -1,9 +1,9 @@
 package com.esh.j2se.generics;
 
-class MyType<T>{
+class MyGenericType<T>{
 	T val;
 	
-	public MyType(T val) {
+	public MyGenericType(T val) {
 		this.val = val;
 	}
 	public T getVal(){
@@ -13,8 +13,8 @@ class MyType<T>{
 public class SimpleGenericExample {
 
 	public static void main(String[] args) {
-		MyType<Integer> intType = new MyType<>(10);
-		MyType<String> strType = new MyType<>("eshita");
+		MyGenericType<Integer> intType = new MyGenericType<>(10);
+		MyGenericType<String> strType = new MyGenericType<>("eshita");
 		//intType = strType; Compilation error. 
 		System.out.println(intType.getVal() + " " + strType.getVal());
 	}

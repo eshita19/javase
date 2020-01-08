@@ -2,6 +2,7 @@ package com.esh.j2se.generics;
 
 class NumeralType<T extends Number>{
 	T val;
+	
 	public NumeralType(T val) {
 		this.val = val;
 	}
