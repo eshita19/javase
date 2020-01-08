@@ -17,6 +17,8 @@
    - ### Bounded types: 
      - Limit the types that can be passed to a type parameter. 
      - For example a bounded type to support only numeral value : ```class Stats<T extends Number>```
+   - ### Wildcard arguments:
+     - Two generic types of different types cannot be compared, but in order to compare two generic types, it can be passed as wildcard argument. ```public boolean sameVal(MyType<?> myType2)```
    
    
 
