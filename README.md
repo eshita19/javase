@@ -38,7 +38,7 @@
        MyGeneric intVal = new MyGeneric(10);
        MyGeneric strVal = new MyGeneric("eshita");
        intVal = (Integer) strVal.getVal() // run time error
-   
+   ```
    
    
 
