@@ -14,6 +14,9 @@
    iob = strob
    int val = (Integer) iob.getVal(); // run-time error
    ```
+   - ### Bounded types: 
+     - Limit the types that can be passed to a type parameter. 
+     - For example a bounded type to support only numeral value : ```class Stats<T extends Number>```
    
    
 
