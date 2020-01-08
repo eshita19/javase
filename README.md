@@ -25,10 +25,19 @@
    - ### Generic methods:  
        - We can create generic method and constructors.
           ```public static <T> int getVal(T val)```
+          
    - ### Generic Interfaces:
      - ```interface MinMax<T extends Comparable<T>>```
      - ```class MyClass<T extends Comparable<T>> implements MinMax<T>```
      -``` Class MyClass implements MinMax<Integer>```
+     
+  - ### Raw types and legacy Code:
+    - ```class MyGeneric<T>{ T val}```
+    - We can Create object without type safety, Here it will be treated as object.
+    - ```
+       MyGeneric intVal = new MyGeneric(10);
+       MyGeneric strVal = new MyGeneric("eshita");
+       intVal = (Integer) strVal.getVal() // run time error
    
    
    
