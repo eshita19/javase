@@ -64,6 +64,23 @@
          - default Stream<E> parallelStream( ) - Returns a stream that uses the invoking collection as its source for elements. 
          - default Spliterator<E> spliterator( ) 
          - default Stream<E> stream( )
+   
+     - **List**: Allows duplicate elements, provide indexing.
+       - Add elements:
+         - public void add(int index, E element): Add element at particular index.
+         - boolean addAll(int index, Collection<? extends E> c) : Add all elements starting at the index.
+         -  boolean add(E obj): Add elements at the end.
+       - Get/Set element:
+         - E get(int index): Get the element at the index.
+         - set(int index, E element)
+         - List<E> subList(int fromIndex, int toIndex): Gets a sublist of elements.
+       - Find elements:
+         -  int indexOf(Object o) - Returns the index of the first occurrence of the specified element in this list, or -1.
+         -  int lastIndexOf(Object o) - Returns the last index of the specified element.
+    - **Set**: 
+         
+         
+       
     
    
          
