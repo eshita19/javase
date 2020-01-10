@@ -77,7 +77,15 @@
        - Find elements:
          -  int indexOf(Object o) - Returns the index of the first occurrence of the specified element in this list, or -1.
          -  int lastIndexOf(Object o) - Returns the last index of the specified element.
-    - **Set**: 
+     - **Set**: Set doesnot define its own methods but add() method will return false if we try to add duplicate element.
+       - **Sorted Set**: Set sorted in ascending order. 
+         - Comparator<? super E> comparator( ) : Returns the custom comparator used otherwise null.
+         - E first( ): Returns first element of set.
+         - E last( ): Returns last element of set.
+         - SortedSet<E> headSet(E end): Returns elements from first element till the end element passed in argument.
+         - SortedSet<E> tailSet(E start): Returns elements from start element in argument till the end.
+         - SortedSet<E> subSet(E start, E end): Returns a SortedSet that includes those elements between start and end–1
+         
          
          
        
