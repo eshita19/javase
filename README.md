@@ -39,7 +39,35 @@
        MyGeneric strVal = new MyGeneric("eshita");
        intVal = (Integer) strVal.getVal() // run time error
       ```
+ ## Collections
+   - ### Collection Interfaces:
+     - **Collection**:
+       - Add elements:
+          - boolean add(E obj) - Return true if elements are added.
+          - boolean addAll(Collection<? extends E> c) - Returns true if the collection changed, else false.
+       - Remove elements:
+         - boolean remove(Object obj) - Removes one instance of obj from the invoking collection. Returns true if the element was removed. Otherwise, returns false.
+         - boolean removeAll(Collection<?> c) - Returns true if collection changed, else false.
+         - default boolean removeIf( Predicate<? super E> predicate) - Removes from the invoking collection those elements that satisfy the condition specified by predicate. 
+         - boolean retainAll(Collection<?> c) - Removes all elements from the invoking collection except those in c.
+         - void clear() - remove all elements.
+       - Contains: 
+         - boolean contains(Object obj) - Returns true if obj is an element of the invoking collection.
+         - boolean containsAll(Collection<?> c) - Returns true if the invoking collection contains all elements of c.
+         - boolean isEmpty( ) - Returns true if the invoking collection is empty.
+         - int size() - no Of elements in collection.
+       - Conversion:
+         - Object[] toArray() - Returns an array that contains all the elements stored in the invoking collection.
+         - <T> T[ ] toArray(T array[ ]) - returns an array of elements that have the same type as the array specified as a parameter.
+       - Iteration:
+         - Iterator<E> iterator( )- Returns an iterator for the invoking collection.
+         - default Stream<E> parallelStream( ) - Returns a stream that uses the invoking collection as its source for elements. 
+         - default Spliterator<E> spliterator( ) 
+         - default Stream<E> stream( )
+    
    
+         
+         
    
 
    
