@@ -94,7 +94,24 @@
         - NavigableSet<E> tailSet(E lowerBound, boolean incl): Returns a NavigableSet that includes all elements from the invoking set that are greater than lowerBound. If incl is true, then an element equal to lowerBound is included.
         - NavigableSet<E> subSet(E lowerBound,boolean lowIncl, E upperBound, boolean highIncl)
         - E pollFirst( ): Returns the first element, removing the element in the process.
-        - E pollLast( ): Returns the last element, removing the element in the process.
+        - E pollLast( ): Returns the last element, removing the element in the process.  
+   - **Queue** - First in first out structure.
+     - E element( ) - Returns the element at the head of the queue. The element is not removed. It throws NoSuchElementException if the queue is empty.
+     - E peek( ) - Returns the element at the head of the queue. It returns null if the queue is empty. The element is not removed.
+     - E remove( ) -  Removes the element at the head of the queue, returning the element in the process. It throws NoSuchElementException if the queue is empty.
+     - E poll( ) - Returns the element at the head of the queue, removing the element in the process. It returns null if the queue is empty.
+     - boolean offer(E obj) - Attempts to add obj to the queue. Returns true if obj was added and false otherwise.
+   - **Deque** - Extends Queue - doubly ended queue.
+     - E peekFirst()/ E peekLast - Returns the element at the head/tail of the deque. It returns null if the deque is empty. The object is not removed.
+     - E pollFirst( )/E pollLast( ) - Returns the element at the head/tail of the deque, removing the element in the process. It returns null if the deque is empty.
+     -  E pop( )/ E removeFirst( ) - Returns the element at the head of the deque, removing it in the process. It throws NoSuchElementException if the deque is empty.
+     - void push(E obj)/ void addFirst(E obj) - Adds obj to the head of the deque. Throws an IllegalStateException if a capacity-restricted deque is out of space.
+     - boolean offerFirst(E obj)/boolean offerLast(E obj) - Attempts to add obj to the head/tail of queue. Returns true if obj was added and false otherwise.
+   
+   - **ArrayList** : Suports dynamic array that can grow as needed.
+  
+  
+ 
     
   
          
