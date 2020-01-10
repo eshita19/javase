@@ -150,6 +150,20 @@
     - Objects are stored in sorted, ascending order.
     - Access and retrieval times are quite fast, which makes TreeSet an excellent choice when storing large amounts of sorted information that must be found quickly.
     
+  - **ArrayDeque**:
+    - The ArrayDeque class extends AbstractCollection and implements the Deque interface.
+It adds no methods of its own. 
+    - Creates a dynamic array.
+    - Constructors:
+      ```
+      ArrayDeque( )
+      ArrayDeque(int size)
+      ArrayDeque(Collection<? extends E> c)
+      ```
+  - **EnumSet**
+    - EnumSet extends AbstractSet and implements Set. 
+    - It is specifically for use with elements of an enum type.
+    
      
        
   
