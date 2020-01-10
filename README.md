@@ -108,8 +108,27 @@
      - void push(E obj)/ void addFirst(E obj) - Adds obj to the head of the deque. Throws an IllegalStateException if a capacity-restricted deque is out of space.
      - boolean offerFirst(E obj)/boolean offerLast(E obj) - Attempts to add obj to the head/tail of queue. Returns true if obj was added and false otherwise.
    
-   - **ArrayList** : Suports dynamic array that can grow as needed.
-  
+   - **ArrayList** : 
+     - The ArrayList class extends AbstractList and implements the List interface.
+     - ArrayList supports dynamic arrays that can grow as needed.
+     - ArrayList constructors:
+       ```
+       ArrayList( )
+       ArrayList(Collection<? extends E> c) 
+       ArrayList(int capacity)
+       ```
+     - void ensureCapacity(int cap) : Manually increase size of arraylist to capacity.
+     - void trimToSize(): Trim array to number of elements it is holding.
+     
+   - **LinkedList**:
+     - The LinkedList class extends AbstractSequentialList and implements the List, Deque, and Queue interfaces. 
+     - Constructors:
+       ```
+       LinkedList( )
+       LinkedList(Collection<? extends E> c)
+       ```
+    - **HashSet** :     
+       
   
  
     
