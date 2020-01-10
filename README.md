@@ -85,6 +85,18 @@
          - SortedSet<E> headSet(E end): Returns elements from first element till the end element passed in argument.
          - SortedSet<E> tailSet(E start): Returns elements from start element in argument till the end.
          - SortedSet<E> subSet(E start, E end): Returns a SortedSet that includes those elements between start and end–1
+      - **Navigable Set** : The NavigableSet interface extends SortedSet 
+        - E ceiling(E obj): Searches the set for the smallest element e such that e >= obj.
+        - E floor(E obj): Searches the set for the largest element e such that e <= obj.
+        - E higher(E obj): Searches the set for the largest element e such that e > obj.
+        - E lower(E obj): Searches the set for the largest element e such that e < obj.
+        -  NavigableSet<E> headSet(E upperBound, boolean incl): Returns a NavigableSet that includes all elements from the invoking set that are less than upperBound. If incl is true, then an element equal to upperBound is included.
+        - NavigableSet<E> tailSet(E lowerBound, boolean incl): Returns a NavigableSet that includes all elements from the invoking set that are greater than lowerBound. If incl is true, then an element equal to lowerBound is included.
+        - NavigableSet<E> subSet(E lowerBound,boolean lowIncl, E upperBound, boolean highIncl)
+        - E pollFirst( ): Returns the first element, removing the element in the process.
+        - E pollLast( ): Returns the last element, removing the element in the process.
+    
+  
          
          
          
